@@ -72,7 +72,7 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 2rem;
   width: 100%;
@@ -336,7 +336,6 @@ h1 {
   margin-top: -4.5rem;
   font-weight: 600;
   font-size: 1.5rem;
-  display: inline-block;
 }
 
 .hero-cta-text:hover {
@@ -768,7 +767,7 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 26rem;
+  top: 21rem;
   opacity: 0;
 }
 
@@ -893,6 +892,7 @@ h1 {
 .price-tag .ultimate {
   position: relative;
 }
+
 .hidden {
   overflow:hidden;
 }
@@ -905,9 +905,9 @@ h1 {
   width: 10rem;
   padding: 0.7rem 1rem;
   position: absolute;
-  left: 70%;
+  left: 66%;
   top: 1rem;
-  transform: rotate(40deg);
+  transform: rotate(45deg);
 }
 
 /* FAQ */
@@ -1215,6 +1215,10 @@ input, textarea {
 
 /* Blog */
 
+.breadcrumb {
+  padding-top: 9rem;
+}
+
 .blog .flex-30 {
   align-self: stretch
 }
@@ -1313,24 +1317,75 @@ input, textarea {
 
 /* Responsive Section */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
 
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 
-  .bars {
-    display: inline-block;
+  .container {
+    padding: 0 4rem;
   }
 
   .flex {
     flex-wrap: wrap;
   }
 
-  .flex-30, .flex-22, .flex-20, .flex-23, .flex-32, .flex-40, .flex-48, .flex-55 {
+  .header {
+    background: rgba(255,255,255,1);
+    position: fixed;
+    padding: 4rem 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .flex-30, .flex-22, .flex-40, .flex-55 {
     flex: 1 1 100%;
     margin: 2rem 0;
   }
+
+  .flex-32 {
+    flex: 1 1 40%;
+    margin: 2rem;
+  }
+
+  .flex-23 {
+    flex: 1 1 40%;
+    margin: 2rem;
+  }
+
+  .flex-20, .flex-10 {
+    flex: 1 1 40%;
+    margin: 2 rem;
+  }
+
+  .footer-brand {
+    align-self: flex-start;
+  }
+
+  .about img {
+    height: 40rem;
+  }
+
+  .values-img {
+    height: 35rem;
+  }
+
+  .portfolio-last-img {
+    width: 252px;
+    height: 189px;
+  }
+
+  .services-nav, .subscribe {
+    margin-top: 2rem;
+  }
+
 
   /* Mobile Navigation */
 
